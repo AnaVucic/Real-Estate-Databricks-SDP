@@ -32,7 +32,7 @@ By working through a realistic, domain‑specific dataset, this project simulate
 3. Cloud Storage - Amazon S3 Bucket
 4. Data Platform - Databricks
     - Spark Declarative Pipelines, PySpark
-    - Delta Live Tables, AutoLoader
+    - AutoLoader
     - Streaming Tables, Views, Materialized Views
     - Change Data Capture
     - Data Modeling Capabilities
@@ -46,7 +46,7 @@ The project follows the **Medallion Architecture** (Bronze, Silver, Gold) to ens
 ```text
 ├── transformations/
 │   ├── bronze/
-│   │   └── postings.py         # Ingests raw S3 data into Bronze using DLT & Auto Loader
+│   │   └── postings.py         # Ingests raw S3 data into Bronze using Auto Loader
 │   │
 │   ├── silver/
 │   │   ├── postings.py         # Cleans data, normalizes tags, and handles CDC upserts
